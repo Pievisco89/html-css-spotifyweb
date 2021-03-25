@@ -80,6 +80,10 @@ main{
   margin: 20px;
 }
 
+#main-nav .logo-small {
+  display: none;
+}
+
 #main-nav .action .nav-action {
   display: flex;
   align-items: center;
@@ -136,6 +140,7 @@ main{
 #main-nav .playlist .playlist-icon:hover{
   color: white;
 }
+
 /* content */
 #content{
   float: left;
