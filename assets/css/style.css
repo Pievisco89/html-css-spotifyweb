@@ -14,7 +14,6 @@
   width: 100%;
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
-  background-color: coral;
 }
 
 main{
@@ -22,10 +21,14 @@ main{
   height: calc(100vh - 90px);
 }
 
+/* main-nav */
 #main-nav{
+  display: flex;
+  flex-direction: column;
   float: left;
   width: 230px;
   height: 100%;
+  color: white;
   background-color: black;
 }  
 
@@ -37,13 +40,33 @@ main{
   background-color: #322e3a;
 }
 
+/* content-top */
 #content .content-top{
   position: fixed;
   height: 90px;
-  width: 100%;
+  width: calc(100% - 230px);
+  line-height: 90px;
+  text-align: right;
   background-color: rgba(0,0,0,0.4);
 }
 
+#content .content-top button{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid white;
+  border-radius: 25px;
+  background-color: transparent;
+  padding: 10px 35px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#content .content-top button:hover{
+  transform: scale(1.2);
+}
+
+/* content-nav */
 #content .content-nav{
   color: white;
   margin-top: 90px;
