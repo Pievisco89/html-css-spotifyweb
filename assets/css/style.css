@@ -32,6 +32,7 @@ main{
   background-color: black;
 }  
 
+/* content */
 #content{
   float: left;
   width: calc(100% - 230px);
@@ -68,11 +69,35 @@ main{
 
 /* content-nav */
 #content .content-nav{
-  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: grey;
   margin-top: 90px;
-  text-align: center;
 }
 
+#content .content-nav .content-nav-item {
+  padding: 25px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#content .content-nav .content-nav-item span {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#content .content-nav .content-nav-item span:hover{
+  color: white;
+}
+
+.green{
+  border-bottom: 2px solid greenyellow;
+}
+
+/* footer */
 footer{
   display: flex;
   justify-content: space-between;
