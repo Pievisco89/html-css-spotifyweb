@@ -299,7 +299,8 @@ footer{
   color: white;
 }
 
-footer .footer-center .player i{
+footer .footer-center .player i,
+footer .footer-right .volume i{
   padding: 15px;
   cursor: pointer;
 }
@@ -310,7 +311,8 @@ footer .footer-center .player-bar{
   align-items: center;
 }
 
-footer .footer-center .player-bar .bar{
+footer .footer-center .player-bar .bar,
+footer .footer-right .volume .bar{
   width: 100%;
   height: 5px;
   background-color: grey;
@@ -318,11 +320,26 @@ footer .footer-center .player-bar .bar{
   margin: 15px;
 }
 
-footer .footer-center .player-bar .bar .bar-white{
-  width: 30%;
+footer .footer-right .volume .bar{
+  min-width: 90px;
+  height: 5px;
+  background-color: grey;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+footer .footer-center .player-bar .bar .bar-white,
+footer .footer-right .volume .bar .bar-white{
+  width: 40%;
   height: 5px;
   border-radius: 5px;
   background-color: white;
+}
+
+footer .footer-right .volume{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* media */
