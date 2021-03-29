@@ -319,6 +319,7 @@ main{
 }
 
 .cover-box{
+  position: relative;
   width: calc(100% / 6);
   padding: 5px;
   text-align: center;
@@ -338,6 +339,21 @@ main{
   border-radius: 50%;
 }
 
+.cover-box:hover .play-hover {
+  opacity: 1;
+}
+
+.play-hover{
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity:0;
+  width: 100%;
+  color: white;
+  font-size: 30px;
+}
+
 /* footer */
 footer{
   display: flex;
@@ -345,21 +361,6 @@ footer{
   align-items: center;
   height: 90px;
   background-color: #282828;
-}
-
-.play-hover{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  color: white;
-}
-
-.play-hover i{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 40px;
 }
 
 /* footer-left */
@@ -489,4 +490,3 @@ footer .footer-right .volume i{
     display: none;
   }
 }
-
