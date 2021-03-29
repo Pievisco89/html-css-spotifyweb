@@ -351,7 +351,7 @@ main{
   opacity:0;
   width: 100%;
   color: white;
-  font-size: 30px;
+  font-size: 45px;
 }
 
 /* footer */
@@ -500,7 +500,22 @@ footer .footer-right .volume i{
     width: calc(100% - 50px);
   }
 
+  #content .covers h4{
+    font-size: 14px;
+  }
+
   #content .cover-box{
     width: 50%;
   } 
+
+  footer .footer-center .player i{
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  footer .footer-right .volume i{
+    font-size: 10px;
+    padding: 5px;
+    cursor: pointer;
+  }
 }
