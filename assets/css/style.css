@@ -279,6 +279,12 @@ main{
   border-bottom: 2px solid greenyellow;
 }
 
+.green-left{
+  border-left: 2px solid greenyellow;
+  margin: 0;
+  padding-left: 23px;
+}
+
 /* recently-creator-popular */
 #recently, 
 #creator,
@@ -321,6 +327,22 @@ footer{
   align-items: center;
   height: 90px;
   background-color: #282828;
+}
+
+.play-hover{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+
+.play-hover i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
 }
 
 /* footer-left */
@@ -390,6 +412,10 @@ footer .footer-center{
   background-color: white;
 }
 
+.bar-white:hover{
+  background-color: greenyellow;
+}
+
 footer .footer-center .player i,
 footer .footer-right .volume i{
   padding: 12px;
@@ -429,7 +455,12 @@ footer .footer-right .volume i{
   #content .content-top{
     width: calc(100% - 50px);
   }
+  .cover-box{
+    width: 50%;
+    background-color: greenyellow;
+  }
 }
+
 
 @media all and (max-width:992px){
   .cover-row{
