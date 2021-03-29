@@ -109,22 +109,24 @@ main{
   display: none;
 }
 
-#main-nav .action .nav-action {
+/* main-nav action */
+#main-nav .action ul img{
+  width: 25px;
+  padding-right: 5px;
+}
+
+#main-nav .action li{
   display: flex;
   align-items: center;
   margin: 15px 25px;
   cursor: pointer;
 }
 
-#main-nav .action .nav-action:hover{
+#main-nav .action span:hover{
   color: white;
 }
 
-#main-nav .action .nav-action img{
-  width: 25px;
-  margin-right: 5px;
-}
-
+/* main-nav playlist */
 #main-nav .playlist{
   margin-top: 10px;
   margin-left: 25px;
@@ -153,7 +155,23 @@ main{
   cursor: pointer;
 }
 
+#main-nav .playlist li{
+  margin: 5px 0;
+}
+
+#main-nav .playlist li a{
+  text-decoration: none;
+}
+
+#main-nav .playlist li a:hover{
+  color: white;
+}
+
 #main-nav .playlist .plus-text:hover{
+  color: white;
+}
+
+#main-nav .playlist .playlist-icon:hover{
   color: white;
 }
 
@@ -162,10 +180,7 @@ main{
   cursor: pointer;
 }
 
-#main-nav .playlist .playlist-icon:hover{
-  color: white;
-}
-
+/* main-nav bottom */
 #main-nav .main-nav-bottom{
   height: 80px;
   background-color: black;
@@ -229,7 +244,7 @@ main{
   border-radius: 25px;
   background-color: transparent;
   padding: 10px 35px;
-  margin-right: 10px;
+  margin-right: 20px;
   cursor: pointer;
 }
 
@@ -407,7 +422,7 @@ footer .footer-right .volume i{
   }
   #main-nav .logo-small{
     display: block
-  }      
+  }    
   #content{
     width: calc(100% - 50px);
   }
