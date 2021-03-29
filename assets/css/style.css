@@ -470,23 +470,37 @@ footer .footer-right .volume i{
 @media all and (max-width:600px){
   #main-nav{
     width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
+
   #main-nav .logo{
     display: none;
   }
+
   #main-nav .logo-small{
-    display: block
-  }    
+    display: block;
+    margin: 5px auto;
+  } 
+
+  #main-nav span{
+    display: none;
+  }
+
+  #main-nav .playlist{
+    display: none;
+  }
+
   #content{
     width: calc(100% - 50px);
   }
   #content .content-top{
     width: calc(100% - 50px);
   }
-  .cover-box{
+
+  #content .cover-box{
     width: 50%;
-  }
-  #main-nav .action span{
-    display: none;
-  }
+  } 
 }
