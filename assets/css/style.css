@@ -147,6 +147,7 @@ main{
 #main-nav .playlist .plus-icon{
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 #main-nav .playlist #plus{
@@ -155,16 +156,11 @@ main{
   width: 38px;
   height: 38px;
   padding: 10px;
-  cursor: pointer;
   margin-right: 10px;
 }
 
 #main-nav .playlist #plus:hover{
   background-color: white;
-}
-
-#main-nav .playlist .plus-text{
-  cursor: pointer;
 }
 
 #main-nav .playlist li{
@@ -420,14 +416,14 @@ footer .footer-center{
   height: 5px;
   background-color: grey;
   border-radius: 5px;
-  margin: 15px;
+  margin: 10px;
 }
 
 .bar-white{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 30%;
+  width: 40%;
   height: 5px;
   border-radius: 5px;
   background-color: white;
@@ -522,6 +518,10 @@ footer .footer-right .volume i{
   #content .cover-box{
     width: 50%;
   } 
+
+  footer .footer-left-icon {
+    margin-left: 15px;
+  }
 
   footer .footer-center .player i{
     padding: 5px;
