@@ -219,14 +219,15 @@ main{
   align-items: center;
   border-top: 1px solid grey;
   margin: 15px;
+  padding-top: 15px;
 }
 
 #main-nav .main-nav-bottom .author img{
-  width: 28px;
+  width: 26px;
+  height: 26px;
   background-color: grey;
   border-radius: 50%;
   margin-left: 10px;
-  margin-top: 10px;
 }
 
 /* content */
@@ -261,7 +262,7 @@ main{
 }
 
 #content .content-top button:hover{
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 /* content-nav */
@@ -269,7 +270,6 @@ main{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  color: grey;
   margin-top: 90px;
   margin-bottom: 35px;
 }
@@ -296,10 +296,10 @@ main{
 #content .content-nav-item .green:after{
   content: "";
   position: absolute;
-  width: 50%;
+  width: 40%;
   height: 1px;
   bottom: 0;
-  left: 25%;
+  left: 30%;
   border-bottom: 2px solid greenyellow;
 }
 
@@ -345,7 +345,7 @@ main{
 
 .play-hover{
   position: absolute; 
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity:0;
@@ -424,14 +424,29 @@ footer .footer-center{
 }
 
 .bar-white{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 30%;
   height: 5px;
   border-radius: 5px;
   background-color: white;
 }
 
-.bar-white:hover{
+.circle-white{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  display: none;
+}
+
+.bar-white:hover {
   background-color: greenyellow;
+}
+
+.bar-white:hover .circle-white{
+  display: block;
 }
 
 footer .footer-center .player i,
